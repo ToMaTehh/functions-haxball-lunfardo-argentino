@@ -142,6 +142,7 @@ if (mensaje.startsWith("!rajar")) {
       }
 
       votosEmitidos.add(vago.id);
+      
       const restantes = VOTOS_NECESARIOS - votosEmitidos.size;
 
       if (restantes > 0) {
@@ -164,4 +165,20 @@ if (mensaje.startsWith("!rajar")) {
   }
 
   return true;
+};
+```
+A esto le podés sumar muchas cosas más, obvio, pibe. Por ejemplo, en caso de que se fuese antes el jugador, tenes que limpiar ```vagoEnLaMira``` o de lo contrario, se tildaría en un nombre que no existe. Podés hacerlo en el evento ```cuandoSeTomeElPalo```, que es el equivalente a OnPlayerLeave.
+
+```ts
+room.cuandoSeTomeElPalo = (vago) => {
+  // Si el vago que se fue era el acusado actual, limpiamos la votación
+  if (vagoEnLaMira && vago.id === vagoEnLaMira.id) {
+    if (tiempoLimite) {
+      clearTimeout(tiempoLimite);
+      tiempoLimite = null;
+    }
+    room.tirarAnuncio(`🏃‍♂️ El acusado ${vago.nombre} se tomó el palo antes de que lo rajemos. Votación cancelada.`, null, COLOR_AMARILLO);
+    vagoEnLaMira = null;
+    votosEmitidos.clear();
+  }
 };

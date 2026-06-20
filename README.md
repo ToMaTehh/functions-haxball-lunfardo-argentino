@@ -1,5 +1,7 @@
 # 🇦🇷 — FUNCIONES de HAXBALL en LUNFARDO ARGENTINO
 
+![functionsHaxballLunfardoArgentino](https://media.discordapp.net/attachments/1511168458979803187/1517802051411644477/Sin_titulo-1.jpg?ex=6a379ad0&is=6a364950&hm=d3b2212d86b4bfdfb2e6a4af4635a2fd3f4f933de9fcbd3f7362ac5e1ca420cc&=&format=webp&width=930&height=465)
+
 ## ✏️ — INTRODUCCIÓN
 Dentro de la comunidad de Haxball sé que radica en una gran parte, y más en la comunidad hispana, los argentinos (yo por ejemplo). Es por eso que, entre ese ir y venir dentro de GitHub, encontré un repositorio que me copó para hacer esto **(WhiteHeadbanger/Lunfardo)** y decidí ponerme manos a la obra en un juego que amo y que sé que a más de uno le va a gustar. En simples palabras: no es ni más ni menos que una estructura que renombra las funciones principales de Haxball al lunfardo argento.
 

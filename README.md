@@ -32,7 +32,7 @@ traerListaDeVagos | Ninguno | getPlayerList | Devuelve un array con todos los Ju
 | Método | Argumentos | Método original | Descripción |
 | --- | --- | --- | --- |
 tunearFisicaDelDisco | "indice: number, propiedades: PropiedadesDelPlatillo" | setDiscProperties | Cambia las físicas de un disco (la bocha es el 0)
-mirarFisicaDelDisco | "indice: number,getDiscProperties | Devuelve las propiedades físicas actuales de un disco
+mirarFisicaDelDisco | "indice: number | getDiscProperties | Devuelve las propiedades físicas actuales de un disco
 tunearFisicaDelVago | "playerId: number, propiedades: PropiedadesDelPlatillo | setPlayerDiscProperties | Modifica las físicas del avatar de un jugador en la cancha
 mirarFisicaDelVago | playerId: number | getPlayerDiscProperties | Mira cómo viene la física del avatar de ese jugador
 traerCantidadDeDiscos | Ninguno | getDiscCount | Devuelve cuántos discos hay creados en la cancha actual

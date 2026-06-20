@@ -55,7 +55,7 @@ cuandoSeArmeElBardo | "(player: JugadorLunfardo, razon: string, porCulpade: Juga
 - <ins>**DESCRIPCIÓN:**</ins> *Primera versión donde se han creado todas las funciones principales de forma que estén traducidas a un lunfardo argentino. De modo que, se ejecuta los comandos sobre otros nombres.*
 
 ## 📦 — EXPLICACIÓN & EJEMPLIFICACIÓN
-Haber... No deja de ser los métodos originales con otros nombres, por lo que, es exactamente lo mismo pero con un lenguaje que todos los argentinos nos entendamos de pies a cabeza. Para ejemplificar el uso de los métodos no me voy a extender tanto, aunque faltan muchas más funciones traducidas como ```OnStadiumChange```, ```setCustomStadium```, ```setPassword```, ```startRecording```, ```stopRecording```, etcétera, etcétera, etcétera, que probablemente agregue en otras versiones posteriores.
+A ver... No deja de ser los métodos originales con otros nombres, por lo que, es exactamente lo mismo pero con un lenguaje que todos los argentinos nos entendamos de pies a cabeza. Para ejemplificar el uso de los métodos no me voy a extender tanto, aunque faltan muchas más funciones traducidas como ```OnStadiumChange```, ```setCustomStadium```, ```setPassword```, ```startRecording```, ```stopRecording```, etcétera, etcétera, etcétera, que probablemente agregue en otras versiones posteriores.
 
 ```ts
 // OnPlayerJoin

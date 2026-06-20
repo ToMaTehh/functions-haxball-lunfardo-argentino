@@ -1,7 +1,7 @@
 # 🇦🇷 — FUNCIONES de HAXBALL en LUNFARDO ARGENTINO
 
 ## ✏️ — INTRODUCCIÓN
-Dentro de la comunidad de Haxball sé que radica en una gran parte, y más en la comunidad hispana, los argentinos (yo por ejemplo). Es por eso que, entre ese ir y venir dentro de GitHub, encontré un repositorio que me copó para hacer ésto **(WhiteHeadbanger/Lunfardo)** y decidí ponerme manos a la obra en un juego que amo y que sé que a más de uno le va a gustar. En simples palabras: No es ni más ni menos que una estructura que renombra las funciones principales de Haxball a un lunfardo argento.
+Dentro de la comunidad de Haxball sé que radica en una gran parte, y más en la comunidad hispana, los argentinos (yo por ejemplo). Es por eso que, entre ese ir y venir dentro de GitHub, encontré un repositorio que me copó para hacer esto **(WhiteHeadbanger/Lunfardo)** y decidí ponerme manos a la obra en un juego que amo y que sé que a más de uno le va a gustar. En simples palabras: no es ni más ni menos que una estructura que renombra las funciones principales de Haxball al lunfardo argento.
 
 ## 📄 — FUNCIONAMIENTO
 ### 👤 — PlayerObject
@@ -34,7 +34,7 @@ traerListaDeVagos | Ninguno | getPlayerList | Devuelve un array con todos los Ju
 tunearFisicaDelDisco | "indice: number, propiedades: PropiedadesDelPlatillo" | setDiscProperties | Cambia las físicas de un disco (la bocha es el 0)
 mirarFisicaDelDisco | "indice: number,getDiscProperties | Devuelve las propiedades físicas actuales de un disco
 tunearFisicaDelVago | "playerId: number, propiedades: PropiedadesDelPlatillo | setPlayerDiscProperties | Modifica las físicas del avatar de un jugador en la cancha
-mirarFisicaDelVago | playerId: number,getPlayerDiscProperties | Mira cómo viene la física del avatar de ese jugador
+mirarFisicaDelVago | playerId: number | getPlayerDiscProperties | Mira cómo viene la física del avatar de ese jugador
 traerCantidadDeDiscos | Ninguno | getDiscCount | Devuelve cuántos discos hay creados en la cancha actual
 
 ### 🎉 — Eventos

@@ -192,7 +192,7 @@ var room = crearCanchaLunfarda({
 
 // - EJEMPLOS
 room.cuandoCaigaUno = (vago) => {
-  room.tirarChat("¡Eeeesa! Se sumó el loco ${vago.nombre} al picadito.");
+  room.tirarChat(`¡Eeeesa! Se sumó el loco ${vago.nombre} al picadito.`);
   
   // Si entra el dueño del circo, le damos la cinta automáticamente
   if (vago.nombre === "ToMaTehhh") {

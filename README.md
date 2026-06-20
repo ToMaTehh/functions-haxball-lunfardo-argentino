@@ -18,7 +18,7 @@ Dentro de la comunidad de Haxball sé que radica en una gran parte, y más en la
 | conexion | (string) | IP del jugador |
 
 ### 🔧 — Funciones
-| Método nuevo | Argumentos | Método original | Descripción |
+| Método | Argumentos | Método original | Descripción |
 | --- | --- | --- | --- |
 tirarChat | "msg: string, targetId?: number" | sendChat | Manda un mensaje común al chat (a todos o a uno solo)
 tirarAnuncio | "msg: string, targetId?: number - null, color?: number, style?: string, sound?: number" | sendAnnouncement | Tira un anuncio destacado con color (hexadecimal) y estilo

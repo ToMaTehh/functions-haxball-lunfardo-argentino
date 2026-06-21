@@ -3,59 +3,59 @@
 ![functionsHaxballLunfardoArgentino](https://media.discordapp.net/attachments/1511168458979803187/1517802051411644477/Sin_titulo-1.jpg?ex=6a379ad0&is=6a364950&hm=d3b2212d86b4bfdfb2e6a4af4635a2fd3f4f933de9fcbd3f7362ac5e1ca420cc&=&format=webp&width=930&height=465)
 
 ## ✏️ — INTRODUCCIÓN
-Dentro de la comunidad de Haxball sé que radica en una gran parte, y más en la comunidad hispana, los argentinos (yo por ejemplo). Es por eso que, entre ese ir y venir dentro de GitHub, encontré un repositorio que me copó para hacer esto **(WhiteHeadbanger/Lunfardo)** y decidí ponerme manos a la obra en un juego que amo y que sé que a más de uno le va a gustar. En simples palabras: no es ni más ni menos que una estructura que renombra las funciones principales de Haxball al lunfardo argento.
+*Dentro de la comunidad de Haxball sé que radica en una gran parte, y más en la comunidad hispana, los argentinos (yo por ejemplo). Es por eso que, entre ese ir y venir dentro de GitHub, encontré un repositorio que me copó para hacer esto **(WhiteHeadbanger/Lunfardo)** y decidí ponerme manos a la obra en un juego que amo y que sé que a más de uno le va a gustar. En simples palabras: no es ni más ni menos que una estructura que renombra las funciones principales de Haxball al lunfardo argento.*
 
 ## 📄 — FUNCIONAMIENTO
 ### 👤 — PlayerObject
 | Nombre del objeto | Argumentos | Descripción | 
 | --- | --- | --- |
-| id | (number) | ID único del vago en la sala |
-| nombre | (string) | El nombre del jugador, sin más |
-| equipo | (number) | 0 = Espectador, 1 = Rojo, 2 = Azul |
-| esGorra | (boolean) | Si el vago tiene admin o no |
-| coordenadas | ({ x: number; y: number }  null) | Ubicación en tiempo real en la cancha |
-| auth | (string null) | Llave de autenticación, un lujo |
-| conexion | (string) | IP del jugador |
+| **id** | ```(number)``` | *ID único del vago en la sala* |
+| **nombre** | ```(string)``` | *El nombre del jugador, sin más* |
+| **equipo** | ```(number)``` | *0 = Espectador, 1 = Rojo, 2 = Azul* |
+| **esGorra** | ```(boolean)``` | *Si el vago tiene admin o no* |
+| **coordenadas** | ```({ x: number; y: number } - null)``` | *Ubicación en tiempo real en la cancha* |
+| **auth** | ```(string - null)``` | *Llave de autenticación, un lujo* |
+| **conexion** | ```(string)``` | *IP del jugador* |
 
 ### 🔧 — Funciones
 | Método | Argumentos | Método original | Descripción |
 | --- | --- | --- | --- |
-tirarChat | "msg: string, targetId?: number" | sendChat | Manda un mensaje común al chat (a todos o a uno solo)
-tirarAnuncio | "msg: string, targetId?: number - null, color?: number, style?: string, sound?: number" | sendAnnouncement | Tira un anuncio destacado con color (hexadecimal) y estilo
-darleElOlivo | "playerId: number, razon: string, banear: boolean" | kickPlayer | Patea o banea a un vago de la cancha con su debida razón
-ponerseLaGorra | "playerId: number, admin: boolean" | setPlayerAdmin | Le da o le quita la gorra para convertir en admin al jugador
-cambiarDeVereda | "playerId: number, teamId: number" | setPlayerTeam | Pasa a un jugador de equipo (0=Spec, 1=Rojo, 2=Azul)
-moverLaRedonda | Ninguno | startGame | Da el pitazo inicial y arranca el picadito
-pararLaPelota | Ninguno | pauseGame(true) | Pausa el partido para calmar las aguas
-terminarElPicadito | Ninguno | stopGame | Termina el juego y manda a todos al lobby
-traerListaDeVagos | Ninguno | getPlayerList | Devuelve un array con todos los JugadorLunfardo en la sala
+**tirarChat** | ```(msg: string, targetId?: number)``` | sendChat | *Manda un mensaje común al chat (a todos o a uno solo)*
+**tirarAnuncio** | ```(msg: string, targetId?: number - null, color?: number, style?: string, sound?: number)``` | sendAnnouncement | *Tira un anuncio destacado con color (hexadecimal) y estilo*
+**darleElOlivo** | ```(playerId: number, razon: string, banear: boolean)``` | kickPlayer | *Patea o banea a un vago de la cancha con su debida razón*
+**ponerseLaGorra** | ```(playerId: number, admin: boolean)``` | setPlayerAdmin | *Le da o le quita la gorra para convertir en admin al jugador*
+**cambiarDeVereda** | ```(playerId: number, teamId: number``` | setPlayerTeam | *Pasa a un jugador de equipo (0=Spec, 1=Rojo, 2=Azul)*
+**moverLaRedonda** | ```Ninguno``` | startGame | *Da el pitazo inicial y arranca el picadito*
+**pararLaPelota** | ```Ninguno``` | pauseGame(true) | *Pausa el partido para calmar las aguas*
+**terminarElPicadito** | ```Ninguno``` | stopGame | *Termina el juego y manda a todos al lobby*
+**traerListaDeVagos** | ```Ninguno``` | getPlayerList | *Devuelve un array con todos los JugadorLunfardo en la sala*
 
 ### ⚡ — Físicas
 | Método | Argumentos | Método original | Descripción |
 | --- | --- | --- | --- |
-tunearFisicaDelDisco | "indice: number, propiedades: PropiedadesDelPlatillo" | setDiscProperties | Cambia las físicas de un disco (la bocha es el 0)
-mirarFisicaDelDisco | "indice: number | getDiscProperties | Devuelve las propiedades físicas actuales de un disco
-tunearFisicaDelVago | "playerId: number, propiedades: PropiedadesDelPlatillo | setPlayerDiscProperties | Modifica las físicas del avatar de un jugador en la cancha
-mirarFisicaDelVago | playerId: number | getPlayerDiscProperties | Mira cómo viene la física del avatar de ese jugador
-traerCantidadDeDiscos | Ninguno | getDiscCount | Devuelve cuántos discos hay creados en la cancha actual
+**tunearFisicaDelDisco** | ```(indice: number, propiedades: PropiedadesDelPlatillo)``` | setDiscProperties | *Cambia las físicas de un disco (la bocha es el 0)*
+**mirarFisicaDelDisco** | ```(indice: number)``` | getDiscProperties | *Devuelve las propiedades físicas actuales de un disco*
+**tunearFisicaDelVago** | ```(playerId: number, propiedades: PropiedadesDelPlatillo)``` | setPlayerDiscProperties | *Modifica las físicas del avatar de un jugador en la cancha*
+**mirarFisicaDelVago** | ```(playerId: number)``` | getPlayerDiscProperties | *Mira cómo viene la física del avatar de ese jugador*
+**traerCantidadDeDiscos** | ```Ninguno``` | getDiscCount | *Devuelve cuántos discos hay creados en la cancha actual*
 
 ### 🎉 — Eventos
 | Evento | Callback esperado | Método original | ¿Cuándo se ejecuta? |
 | --- | --- | --- | --- |
-cuandoCaigaUno | (player: JugadorLunfardo) => void | onPlayerJoin | Cuando un nuevo vago entra a la sala
-cuandoSeTomeElPalo | (player: JugadorLunfardo) => void | onPlayerLeave | Cuando alguien abandona o se desconecta
-cuandoPinteCharlar | "(player: JugadorLunfardo, mensaje: string) => boolean - void" | onPlayerChat | Cuando alguien escribe. Si retorna false, el mensaje se oculta
-cuandoSePongaLaBochaEnJuego | () => void | onGameStart | En el momento exacto en que arranca el partido
-cuandoAlguienLePegueUnChantazo | (player: JugadorLunfardo) => void | onPlayerBallKick | Cuando un jugador le mete un buen zapatazo a la bocha
-cuandoHaganUnGol | (equipoGanador: number) => void | onTeamGoal | ¡GOL! Devuelve 1 si fue del Rojo o 2 si fue del Azul
-cuandoSeArmeElBardo | "(player: JugadorLunfardo, razon: string, porCulpade: JugadorLunfardo) => void" | onPlayerKicked | Cuando rajan a alguien; te dice quién marchó, por qué y quién lo echó
+**cuandoCaigaUno** | ```(player: JugadorLunfardo) => void``` | onPlayerJoin | *Cuando un nuevo vago entra a la sala*
+**cuandoSeTomeElPalo** | ```(player: JugadorLunfardo) => void``` | onPlayerLeave | *Cuando alguien abandona o se desconecta*
+**cuandoPinteCharlar** | ```(player: JugadorLunfardo, mensaje: string) => boolean - void``` | onPlayerChat | *Cuando alguien escribe. Si retorna false, el mensaje se oculta*
+**cuandoSePongaLaBochaEnJuego** | ```() => void``` | onGameStart | *En el momento exacto en que arranca el partido*
+**cuandoAlguienLePegueUnChantazo** | ```(player: JugadorLunfardo) => void``` | onPlayerBallKick | *Cuando un jugador le mete un buen zapatazo a la bocha*
+**cuandoHaganUnGol** | ```(equipoGanador: number) => void``` | onTeamGoal | *Devuelve 1 si fue del Rojo o 2 si fue del Azul*
+**cuandoSeArmeElBardo** | ```(player: JugadorLunfardo, razon: string, porCulpade: JugadorLunfardo) => void``` | onPlayerKicked | *Cuando rajan a alguien; te dice quién marchó, por qué y quién lo echó*
 
 ## 📁 — DOCUMENTACIÓN
 - **Versión 1.0.0 - 20 de Junio, 2026**
 - <ins>**DESCRIPCIÓN:**</ins> *Primera versión donde se han creado todas las funciones principales de forma que estén traducidas a un lunfardo argentino. De modo que, se ejecuta los comandos sobre otros nombres.*
 
 ## 📦 — EXPLICACIÓN & EJEMPLIFICACIÓN
-A ver... No deja de ser los métodos originales con otros nombres, por lo que, es exactamente lo mismo pero con un lenguaje que todos los argentinos nos entendamos de pies a cabeza. Para ejemplificar el uso de los métodos no me voy a extender tanto, aunque faltan muchas más funciones traducidas como ```OnStadiumChange```, ```setCustomStadium```, ```setPassword```, ```startRecording```, ```stopRecording```, etcétera, etcétera, etcétera, que probablemente agregue en otras versiones posteriores.
+*A ver... No deja de ser los métodos originales con otros nombres, por lo que, es exactamente lo mismo pero con un lenguaje que todos los argentinos nos entendamos de pies a cabeza. Para ejemplificar el uso de los métodos no me voy a extender tanto, aunque faltan muchas más funciones traducidas como ```OnStadiumChange```, ```setCustomStadium```, ```setPassword```, ```startRecording```, ```stopRecording```, etcétera, etcétera, etcétera, que probablemente agregue en otras versiones posteriores.*
 
 ```ts
 // OnPlayerJoin
@@ -76,7 +76,7 @@ room.cuandoPinteCharlar = (vago, mensaje) => {
 };
 ```
 
-Ahora, como última explicación, haré un sistema de ```!votekick``` bajo estas funciones jajaja. Atentos.
+*Ahora, como última explicación, haré un sistema de ```!votekick``` bajo estas funciones jajaja. Atentos.*
 ```ts
 let vagoEnLaMira: JugadorLunfardo | null = null;
 let votosEmitidos = new Set<number>();
@@ -169,7 +169,7 @@ if (mensaje.startsWith("!rajar")) {
   return true;
 };
 ```
-A esto le podés sumar muchas cosas más, obvio, pibe. Por ejemplo, en caso de que se fuese antes el jugador, tenes que limpiar ```vagoEnLaMira``` o de lo contrario, se tildaría en un nombre que no existe. Podés hacerlo en el evento ```cuandoSeTomeElPalo```, que es el equivalente a OnPlayerLeave.
+*A esto le podés sumar muchas cosas más, obvio, pibe. Por ejemplo, en caso de que se fuese antes el jugador, tenes que limpiar ```vagoEnLaMira``` o de lo contrario, se tildaría en un nombre que no existe. Podés hacerlo en el evento ```cuandoSeTomeElPalo```, que es el equivalente a ```OnPlayerLeave```.*
 
 ```ts
 room.cuandoSeTomeElPalo = (vago) => {
